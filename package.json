@@ -1,0 +1,44 @@
+{
+  "name": "telefone-mask-ng2",
+  "version": "1.0.5",
+  "description": "Máscara de telefone com suporte ao nono dígito.",
+  "main": "./mask/index.js",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "author": "Charles Assunção",
+  "license": "ISC",
+  "files": [
+    "mask/"
+  ],
+  "keywords": [
+    "mascara",
+    "telefone",
+    "phone",
+    "angular 2",
+    "ng2",
+    "nono dígito",
+    "mask"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assuncaocharles/telefone-mask-ng2.git"
+  },
+  "dependencies": {
+    "@angular/core": "~4.0.0",
+    "@types/source-map": "^0.5.0",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "vanilla-masker": "^1.1.1",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^4.1.3",
+    "@angular/compiler-cli": "^4.1.3",
+    "@types/core-js": "^0.9.41",
+    "@types/node": "^7.0.22",
+    "rollup": "^0.41.6",
+    "typescript": "^2.3.3",
+    "uglify-js": "^3.0.13"
+  }
+}
