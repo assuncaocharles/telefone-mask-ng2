@@ -1,15 +1,17 @@
 # Sobre
 
-Uma simples diretiva que se adapta à telefones com ou sem o nono dígito. 
+Uma simples diretiva que se adapta à telefones com ou sem o nono dígito.
 
 ## Comportamento
 
-*** Número com o nono dígito ***
+**_ Número com o nono dígito _**
+
 ```
 (99) 9 9999-9999
 ```
 
-*** Número sem o nono dígito ***
+**_ Número sem o nono dígito _**
+
 ```
 (99) 9999-9999
 ```
@@ -19,14 +21,14 @@ Uma simples diretiva que se adapta à telefones com ou sem o nono dígito.
 Importe a diretiva dentro do módulo que deseja fazer uso:
 
 ```
-import { TelefoneMask } from 'telefone-mask-ng2/mask';
+import { TelefoneMask } from 'telefone-mask-ng2';
 ```
 
 E faça a sua declaração dentro do módulo:
 
-``` 
-declarations: [ 
-    ...    
+```
+declarations: [
+    ...
     TelefoneMask
     ...
   ],

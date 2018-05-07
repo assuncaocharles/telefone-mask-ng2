@@ -1,16 +1,19 @@
 {
   "name": "telefone-mask-ng2",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Máscara de telefone com suporte ao nono dígito.",
   "main": "./mask/index.js",
   "scripts": {
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify":
+      "uglifyjs dist/bundles/amazing.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/amazing.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
   },
   "author": "Charles Assunção",
   "license": "ISC",
-  "files": [
-    "mask/"
-  ],
+  "files": ["mask/"],
   "keywords": [
     "mascara",
     "telefone",
@@ -25,20 +28,51 @@
     "url": "https://github.com/assuncaocharles/telefone-mask-ng2.git"
   },
   "dependencies": {
-    "@angular/core": "~4.0.0",
+    "@angular/common": "^5.2.9",
+    "@angular/core": "^5.2.0",
     "@types/source-map": "^0.5.0",
     "core-js": "^2.4.1",
-    "rxjs": "5.0.1",
+    "npm": "^5.8.0",
+    "rxjs": "^5.5.8",
     "vanilla-masker": "^1.1.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/compiler": "^4.1.3",
-    "@angular/compiler-cli": "^4.1.3",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
     "@types/core-js": "^0.9.41",
-    "@types/node": "^7.0.22",
-    "rollup": "^0.41.6",
-    "typescript": "^2.3.3",
-    "uglify-js": "^3.0.13"
+    "uglify-js": "^3.0.13",
+    "@types/jasmine": "2.5.36",
+    "@types/node": "^6.0.46",
+    "camelcase": "^4.0.0",
+    "concurrently": "3.4.0",
+    "core-js": "^2.4.1",
+    "glob": "^7.1.1",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-html-reporter": "^0.2.7",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-remap-coverage": "^0.1.4",
+    "lite-server": "^2.2.2",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.42.0",
+    "rollup-plugin-sourcemaps": "^0.4.1",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rxjs": "^5.5.2",
+    "standard-version": "^4.0.0",
+    "systemjs": "^0.19.40",
+    "tslint": "^4.4.2",
+    "typescript": "~2.4.2",
+    "zone.js": "^0.8.4"
   }
 }

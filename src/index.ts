@@ -1,1 +1,1 @@
-export * from "./phone-mask/phone-mask";
+export { TelefoneMask } from "./phone-mask/phone-mask";
