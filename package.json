@@ -7,13 +7,16 @@
     "prepublish": "tsc",
     "transpile": "ngc",
     "package": "rollup -c",
-    "minify":
-      "uglifyjs dist/bundles/amazing.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/amazing.umd.min.js",
-    "build": "npm run transpile && npm run package && npm run minify"
+    "minify": "uglifyjs dist/bundles/amazing.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/amazing.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Charles Assunção",
   "license": "ISC",
-  "files": ["mask/"],
+  "files": [
+    "mask/"
+  ],
   "keywords": [
     "mascara",
     "telefone",
@@ -32,10 +35,11 @@
     "@angular/core": "^5.2.0",
     "@types/source-map": "^0.5.0",
     "core-js": "^2.4.1",
-    "npm": "^5.8.0",
+    "npm": "^6.6.0",
     "rxjs": "^5.5.8",
     "vanilla-masker": "^1.1.1",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "snyk": "^1.163.3"
   },
   "devDependencies": {
     "@angular/common": "^5.0.0",
@@ -74,5 +78,6 @@
     "tslint": "^4.4.2",
     "typescript": "~2.4.2",
     "zone.js": "^0.8.4"
-  }
+  },
+  "snyk": true
 }
