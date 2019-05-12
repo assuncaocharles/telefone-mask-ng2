@@ -1,5 +1,7 @@
 # Sobre
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/assuncaocharles/telefone-mask-ng2.svg)](https://greenkeeper.io/)
+
 Uma simples diretiva que se adapta à telefones com ou sem o nono dígito.
 
 ## Comportamento
