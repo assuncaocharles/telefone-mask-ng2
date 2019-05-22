@@ -65,7 +65,7 @@
     "karma-jasmine": "^2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "karma-remap-coverage": "^0.1.4",
-    "lite-server": "^2.2.2",
+    "lite-server": "^2.5.0",
     "rimraf": "^2.6.1",
     "rollup": "^1.11.3",
     "rollup-plugin-sourcemaps": "^0.4.1",
