@@ -48,7 +48,7 @@
     "@angular/core": "^7.2.15",
     "@angular/platform-browser": "^7.2.15",
     "@angular/platform-browser-dynamic": "^7.2.15",
-    "@types/core-js": "^2.5.0",
+    "@types/core-js": "^2.5.1",
     "uglify-js": "^3.0.13",
     "@types/jasmine": "3.3.13",
     "@types/node": "^12.0.0",
