@@ -39,7 +39,7 @@
     "rxjs": "^6.5.2",
     "vanilla-masker": "^1.1.1",
     "zone.js": "^0.9.1",
-    "snyk": "^1.189.0"
+    "snyk": "^1.192.5"
   },
   "devDependencies": {
     "@angular/common": "^7.2.15",
@@ -58,7 +58,7 @@
     "glob": "^7.1.1",
     "jasmine-core": "^3.4.0",
     "karma": "^4.1.0",
-    "karma-chrome-launcher": "^3.0.0",
+    "karma-chrome-launcher": "^2.0.0",
     "karma-cli": "^2.0.0",
     "karma-coverage": "^2.0.0",
     "karma-html-reporter": "^0.2.7",
