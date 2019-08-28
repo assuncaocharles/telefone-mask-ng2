@@ -14,9 +14,9 @@ export class TelefoneMask{
         this.render.listen(this.nativeElement, 'keyup', () => {
             const text = (this.nativeElement.value).replace(/[_\W]+/g,'');            
             
-            const newText = text.length < 11 ? '(99) 9999-9999?9' : '(99) 9 9999-9999';
+            const mask = text.length < 11 ? '(99) 9999-9999?9' : '(99) 9 9999-9999';
             
-            VMasker(this.nativeElement).maskPattern(m);
+            VMasker(this.nativeElement).maskPattern(mask);
         });
     }
 }
