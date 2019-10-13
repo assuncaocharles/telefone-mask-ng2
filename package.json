@@ -34,7 +34,7 @@
     "@angular/common": "^7.2.15",
     "@angular/core": "^7.2.15",
     "@types/source-map": "^0.5.0",
-    "core-js": "^3.0.1",
+    "core-js": "^3.3.0",
     "npm": "^6.6.0",
     "rxjs": "^6.5.2",
     "vanilla-masker": "^1.1.1",
