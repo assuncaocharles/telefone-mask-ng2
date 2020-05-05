@@ -39,7 +39,7 @@
     "rxjs": "^6.5.2",
     "vanilla-masker": "^1.1.1",
     "zone.js": "^0.9.1",
-    "snyk": "^1.290.1"
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "@angular/common": "^7.2.15",
